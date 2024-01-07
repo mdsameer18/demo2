@@ -1,16 +1,32 @@
-import java.util.Scanner;
-class Sameer
+class C
+{
+public void display()
+{
+System.out.println("method of clas c");
+}
+}
+class A extends C
+
+{
+void display()
+{
+System.out.println("method of class A");
+}
+}
+class B extends C
+{
+void display()
+{
+System.out.println("method of class b");
+}
+}
+class Bharath
 {
 public static void main(String args[])
 {
-int i,j=0;
-for(i=0;i<3;i++)
-{
-System.out.print("\n");
-for(j=0;j<5;j++)
-{
-System.out.print("i="+i+"j="+j);
-}
-}
+B b=new B();
+b.display();
+b.display();
+b.display();
 }
 }
